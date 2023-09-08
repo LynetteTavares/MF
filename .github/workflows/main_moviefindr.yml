@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'MovieFindr'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_04C12ACCC2CD4D869B1ABFA063F4CA9A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B1FDA0A93A054941945BA2B42DB12408 }}
