@@ -5,4 +5,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return '<h1>Hello, World!</h1>'
+    print("Hello Ladies and Genitals")
+    print("This is MovieFindr")
+    return
