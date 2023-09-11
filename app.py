@@ -1,8 +1,8 @@
-from flask import Flask
+import mysql.connector
+cnx = mysql.connector.connect(user="CloudCrafters", password="ABL@FdmMvpS$", host="movie-findr.mysql.database.azure.com", port=3306, database="moviefindr", ssl_ca="https://github.com/LynetteTavares/MF/blob/main/DigiCertGlobalRootG2.crt.pem", ssl_disabled=False)
 
-app = Flask(__name__)
-
-
-@app.route('/')
-def hello():
-    return '<h1>Hello Ladies and Genitals! This is MovieFindr!</h1>'
+try:
+    cursor=cnx.cursor()
+    print("Connection established")
+except mysql.connector.Error as err:
+    print(err)
